@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b3f5yijn8lv1n"]
+
+[ext_resource type="Script" uid="uid://cw5tig0aha3ku" path="res://Scripts/IsoMap.cs" id="1"]
+[ext_resource type="PackedScene" path="res://Player.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://Enemy.tscn" id="3"]
+
+[node name="Main" type="Node2D" unique_id=617573223]
+script = ExtResource("1")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=620690598]
+zoom = Vector2(1.2, 1.2)
+
+[node name="Player" parent="." unique_id=666902739 instance=ExtResource("2")]
+
+[node name="Enemy" parent="." unique_id=123456789 instance=ExtResource("3")]
